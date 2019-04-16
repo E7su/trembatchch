@@ -15,8 +15,8 @@ RUN mkdir /build && cd /build && \
 
 
 # get pip alongside pip3; is this better than a symlink?
-RUN pip3 install --upgrade pip
-RUN pip3 install -r /app/requirements.txt
+RUN pip3 install --upgrade pip && \
+    pip3 install -r /app/requirements.txt
 
 WORKDIR /app
 
