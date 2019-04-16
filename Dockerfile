@@ -1,6 +1,8 @@
 FROM centos:centos6
 LABEL maintainer Polina Azarova <etsu4296@gmail.com>
 
+ARG TELEGRAM_TOKEN_BUILD
+
 ADD requirements.txt /app/requirements.txt
 
 # install dependencies
