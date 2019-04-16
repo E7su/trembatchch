@@ -20,6 +20,8 @@ RUN pip3 install -r /app/requirements.txt
 
 WORKDIR /app
 
+ENV TELEGRAM_TOKEN=122728217:AAF1UTsSrjYeQr0xt9M6FhNtGy8L0GEUGw0
+
 RUN wget https://github.com/E7su/pidgey.git
 
 EXPOSE 5000
