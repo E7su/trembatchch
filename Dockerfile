@@ -23,7 +23,6 @@ WORKDIR /app
 ENV TELEGRAM_TOKEN=122728217:AAF1UTsSrjYeQr0xt9M6FhNtGy8L0GEUGw0
 
 RUN git clone https://github.com/E7su/pidgey.git && cd /app
-RUN git clone https://github.com/E7su/trembatchch.git && cp /app/pidgey/pidgey.py /app/trembatchch
 
 EXPOSE 5000
 
