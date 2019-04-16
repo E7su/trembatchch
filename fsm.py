@@ -5,7 +5,7 @@ import logging as log
 import re
 
 import telegram as tm
-from pidgey.pidgey import convert_num_sys
+from pidgey import convert_num_sys
 import texts as tx
 
 
