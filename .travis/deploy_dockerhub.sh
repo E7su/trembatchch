@@ -5,6 +5,6 @@ if [ "$TRAVIS_BRANCH" = "master" ]; then
 else
     TAG="$TRAVIS_BRANCH"
 fi
-docker build -f Dockerfile -t e7su/trembatchch:$TAG .
+docker build -f Dockerfile --build-arg TELEGRAM_TOKEN=$TELEGRAM_TOKEN -t e7su/trembatchch:$TAG .
 docker push e7su/trembatchch
 
