@@ -20,7 +20,7 @@ RUN mkdir /build && cd /build && \
 RUN pip3 install --upgrade pip && \
     pip3 install -r /app/requirements.txt
 
-ENV TELEGRAM_TOKEN=$TELEGRAM_TOKEN_BUILD
+ENV TELEGRAM_TOKEN
 
 WORKDIR /app
 
