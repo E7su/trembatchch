@@ -26,6 +26,4 @@ WORKDIR /app
 
 RUN git clone https://github.com/E7su/trembatchch.git
 
-EXPOSE 5000
-
 CMD ["python3.5", "/app/trembatchch/server.py"]
